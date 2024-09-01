@@ -5,6 +5,11 @@ A simple and efficient tool for testing your API endpoints without any hassle. J
 
 ![image](https://github.com/user-attachments/assets/543d6922-f272-4031-a8c6-a2f6503498f0)
 
+### Install
+```ps
+NuGet\Install-Package Devnotec.Requester -Version 1.0.0
+```
+
 
 ## Let's get started
 First, we create a class that inherits from the base class `RequestEndpoint` 
