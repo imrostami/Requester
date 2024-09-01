@@ -26,3 +26,19 @@ public class TestRequest1 : RequestEndpoint
 ```
 
 Each `RequestEndpoint` provides two functions for sending the final response: `TestSucceeded` and `TestFailed`. You send the response generated in the current test as input to these functions so that it remains available for subsequent tests. For example, if you want to retrieve a todo item by its ID, which was created from the response of the previous test, you can access it using the `previousResult` object from parameter
+
+
+Finally, to set up the request pipeline, you need to add your tests in your console application and execute the `RunTests` function
+
+```cs
+var baseAddress = new Uri("https://jsonplaceholder.typicode.com");
+
+var builder = new RequesterBuilder(baseAddress)
+	.AddRequestEndpoint("/todos", new TestRequest1())
+	.AddRequestEndpoint("/todosk", new TestRequest1());
+
+var app = builder.Build();
+
+await app.RunTests();
+
+```
