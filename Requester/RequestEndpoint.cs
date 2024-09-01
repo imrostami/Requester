@@ -7,22 +7,21 @@ namespace Requester
 {
 	public abstract class RequestEndpoint
 	{
-		private HttpClient httpClient;
         internal Uri EndpointBaseAddress { get; set; }
 
         public HttpClient Http
 		{
 			get
 			{
-				if(httpClient == null)
+				if(DefaultHttpClient.Shared == null)
 				{
-					httpClient = new HttpClient()
+					DefaultHttpClient.Shared = new HttpClient()
 					{
 						BaseAddress = EndpointBaseAddress
 					};
-					return httpClient;
+					return DefaultHttpClient.Shared;
 				}
-				return httpClient;
+				return DefaultHttpClient.Shared;
 			}
 		}
 		public abstract Task<IEndpointResult> Handle(IEndpointResult previousResult);

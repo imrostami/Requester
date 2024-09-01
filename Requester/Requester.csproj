@@ -2,6 +2,25 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Title>Requester</Title>
+    <Authors>Mohammad Rostami</Authors>
+    <Company>devnotec</Company>
+    <Description>A simple and efficient tool for testing your API endpoints without any hassle. Just create and add your request endpoints, then run the tests.
+
+</Description>
+    <Copyright> GPL-3.0 license</Copyright>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryUrl>https://github.com/imrostami/Requester/</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageId>Devnotec.Requester</PackageId>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="C:\Users\Mohammad\Downloads\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
 
 </Project>
