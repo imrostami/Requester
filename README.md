@@ -3,7 +3,8 @@
 A simple and efficient tool for testing your API endpoints without any hassle. Just create and add your request endpoints, then run the tests.
 
 
-![image](https://github.com/user-attachments/assets/543d6922-f272-4031-a8c6-a2f6503498f0)
+![image](https://github.com/user-attachments/assets/5787efd3-7be2-47a5-b7a8-3b1fd71e1cae)
+
 
 ### Install
 ```ps
