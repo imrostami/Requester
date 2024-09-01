@@ -14,6 +14,7 @@
     <RepositoryUrl>https://github.com/imrostami/Requester/</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageId>Devnotec.Requester</PackageId>
+    <Version>1.0.1</Version>
   </PropertyGroup>
 
   <ItemGroup>
