@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Net.Http;
-using System.Runtime.Serialization.Json;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace Requester
@@ -41,9 +38,6 @@ namespace Requester
 
 				if (endpointResult.Success)
 					Report.CreateCheckbox(true, $"{endpointResult.Path} Endpoint test was successful");
-
-
-				
 			}
 		}
 

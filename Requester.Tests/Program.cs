@@ -1,14 +1,14 @@
 ﻿using Requester;
 using Requester.Tests.Requests;
+using System.Reflection;
 
 
 
-var baseAddress = new Uri("https://localhost:7011/");
+var baseAddress = new Uri("https://jsonplaceholder.typicode.com/");
 
 
 var builder = new RequesterBuilder(baseAddress)
-	.AddRequestEndpoint("/api/users/login", new TestLogin())
-	.AddRequestEndpoint("api/identity/validateAuth", new TestAuthrozie());
+	.MapFromAssembly(typeof(Program).Assembly);
 
 
 
